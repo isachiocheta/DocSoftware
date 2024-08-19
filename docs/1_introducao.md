@@ -1,972 +1,300 @@
-Modelo 1 – curriculum vitae
+Documento de Visão
 
-  
-CURRICULUM VITAE
-  
+Nome do Projeto: Library Software
 
-NOME
+Versão: [Insira a versão do documento]
 
-  
-**1 – DADOS PESSOAIS**
+Data: 15/07/2024
 
-Objetivo:
+Nome Integrantes: Isabela Chiocheta, Érica Jaqueline Dos S7antos de Lima, Gabriely Trevisan, Eduarda Bueno Zonta, Julia Rocha.
 
-Telefones:
 
-Data de nascimento:
 
-Sexo:
+## 1. Introdução
 
-Estado Civil:
+Em busca de automatizar o processo bibliográfico em instituições de ensino, a empresa Library Software é especializada em desenvolver projetos possibilitando e melhorando o acesso fácil às estatísticas do acervo da biblioteca, bem como as relacionadas a sua circulação. Situação que permite que a equipe dedicada ao setor realize ações de incentivo à leitura. O sistema é projetado visando possibilitar uma interface e navegabilidade otimizada, que atenda a demanda de todos os clientes. O software foi pensado para criar parcerias com instituições de ensino e bibliotecas, públicas ou privadas.
 
-E-mail:
+## 1.1 Objetivo
 
-    
+O objetivo deste documento é fornecer uma visão geral do projeto Sistema de Biblioteca. Ele descreve a finalidade do projeto, os principais stakeholders envolvidos, os requisitos principais, os diagramas de caso de uso, diagrama de classes e protótipos de possíveis telas para o sistema. Este documento servirá como guia durante todo o ciclo de desenvolvimento do projeto, garantindo que as necessidades dos stakeholders sejam atendidas de forma eficaz.
 
-**2 – FORMAÇÃO ACADÊMICA**
+## 1.2 Escopo
 
-    
+Este projeto visa desenvolver um sistema de gerenciamento de biblioteca, que terá como finalidade automatizar os processos de empréstimo, devolução, reserva e organização do acervo bibliográfico. O sistema se destina aos alunos, professores, bibliotecários e administradores da biblioteca, proporcionando uma experiência mais eficiente e satisfatória no acesso e uso dos recursos disponíveis.
 
-**3 – CONHECIMENTOS EM INFORMÁTICA**
+1\.3 Definições, Acrônimos e Abreviações
 
-    
+[Insira uma lista de definições, acrônimos e abreviações utilizados no documento, se necessário.]
 
-**4 – IDIOMAS**
+## 1.4 Público-alvo
 
-    
+- Clientes: Instituições educacionais, como escolas, universidades e institutos de ensino, que contratam e utilizam o sistema de biblioteca para melhorar os serviços oferecidos aos seus alunos e funcionários.
 
-**5 – PARTICIPAÇÃO EM EVENTOS**
+- Usuários: Alunos de todas as idades, professores, pesquisadores e membros da comunidade que frequentam a biblioteca para estudar, realizar pesquisas, emprestar livros e utilizar outros recursos disponibilizados.
 
-  
+- Bibliotecários, funcionários e Administradores da Biblioteca: Profissionais responsáveis pela administração, organização e gestão do acervo bibliográfico, bem como pelo atendimento aos usuários e pelo funcionamento geral da biblioteca.
 
-**6 – CURSOS**
+- Desenvolvedores: Alunas do módulo 7 (Isabela, Eduarda, Érica, Gabriely, Julia Rocha) responsáveis pelo desenvolvimento, ajustes, organização e finalização do projeto.
 
-  
+## 2. Descrição do Projeto
 
-**7 – INTERESSES PESSOAIS**
+**2.1 Visão Geral do Projeto**
 
-  
+Perante a necessidade de automatizar processos em bibliotecas e com o objetivo de incentivar a prática da leitura em instituições de ensino, proporcionando facilidade e uma experiência de qualidade ao usuário, a Library Software surge com o intuito de inovar e ampliar o acesso a tecnologias que facilitem e beneficiam o cotidiano do bibliotecário. 
 
-  
+O sistema desenvolvido pela Library Software promove o controle do acervo bibliotecário, apresentando como recursos para a equipe de bibliotecários o cadastro de usuários, a catalogação, consulta e reserva de livros, incluindo o gerenciamento de empréstimos e multas. 
 
-  
+**2.1.1 Canvas do Projeto**
 
-  
+![](Aspose.Words.1be3cf06-55fc-4728-9f1a-d0a9999fca6b.002.jpeg)
 
-Data:
+![](Aspose.Words.1be3cf06-55fc-4728-9f1a-d0a9999fca6b.003.jpeg)
 
-  
+**2.2 Stakeholders**
 
-ASSINATURA
+Principais partes interessadas no projeto:
 
-  
+- Usuários da Biblioteca - Alunos, professores e funcionários que utilizam os serviços da biblioteca.
+- Administradores da Biblioteca - Responsáveis pela gestão da biblioteca, empréstimos, devoluções e demais atividades administrativas.
+- Equipe de Desenvolvimento - Encarregadas do planejamento, desenvolvimento, implementação e manutenção do sistema (Isabela, Eduarda, Erica, Gabriely, Julia).
 
-Modelo 2 – curriculum vitae
+**2.3 Objetivos**
 
-  
+O objetivo proposto do projeto é automatizar o processo de empréstimos e devoluções, de modo que o usuário consiga realizar o empréstimo e devolução de maneira simples e rápida, fazendo com que essa atividade seja resolvida com eficiência e achar facilmente quais são os materiais disponíveis na biblioteca, ajuda os funcionários a organizar, e catalogar todos os livros. Oferece uma plataforma com base nas necessidades dos usuários, que seria a praticidade, a rapidez e a localidade ajuda bastante o usuário a ter uma boa experiência.
 
-  
+**3. Principais Recursos e Funcionalidades**
 
-  
+1. Catalogação de livros:
+   1. Registro de um conjunto de informações sobre um determinado livro.
+   1. O sistema permite que os dados sejam excluídos ou editados.
+1. Consulta:
+   1. O sistema permite a consulta por título, editora, autor e gênero do livro.
+   1. O sistema permite a consulta por nome de usuário, CPF ou telefone.
+   1. O sistema permite a consulta dos empréstimos e reservas dos livros.
+1. Reserva:
+   1. O bibliotecário pode realizar a reserva do livro ao usuário, ou seja, a data para o empréstimo do livro será agendada a partir da reserva.
+   1. O bibliotecário pode cancelar ou renovar a reserva feita pelo usuário.
+   1. É possível informar a data de reserva do livro.
+1. Devolução:
+   1. É possível cadastrar a devolução do empréstimo feito.
+   1. É possível informar a data de devolução do livro emprestado.
+1. Multas:
+   1. O sistema realiza o cálculo da multa conforme as datas de reserva e devolução do livro.
+   1. O sistema permite que a multa seja excluída ou editada.
+1. Empréstimo:
+   1. O sistema permite o registro do empréstimo do livro, ou seja, quando este é retirado do acervo bibliotecário.
+1. Gerenciamento de conta:
+   1. O sistema permite que os dados dos usuários sejam alterados, excluídos e adicionados.
 
-**Nome**
 
-  
 
-Estado Civil, nacionalidade, idade
+**3.1 Requisitos Funcionais e 3.2 Requisitos Não Funcionais**
 
-Endereço
+**RF.001 -** O sistema deve permitir a criação de logins de acesso ao sistema: 
 
-Telefone Residencial:
+*RN.001* - O *login* será destinado aos funcionários e usuário. 
 
-Telefone Celular:
+*RN.002* - O *login* será destinado a pessoas físicas para usuários e funcionários. 
 
-E-mail:
+*RN.003* - O *login* ‘Usuário’ se destinará exclusivamente aos usuários do sistema. 
 
-  
+*RN.004* - O *login* 'Funcionário' se destinará exclusivamente ao funcionário da biblioteca.
 
-**Objetivo**
+*RN.005* - Para realizar o acesso o sistema irá pedir login e senha.
 
-  
+**RF.002 -** O sistema deve permitir ao funcionário o registro do cadastro de um usuário. 
 
-  
+*RN.006* – Para a inclusão de uma pessoa física são necessários os seguintes dados: 
 
-**Resumo profissional**
+➔ Nome Completo; 
 
-  
+➔ CPF; 
 
-  
+➔ E-mail; 
 
-**Experiência Profissional**
+➔ Telefone; 
 
-  
+➔ Endereço;
 
-  
+➔ Login; 
 
-**Formação acadêmica**
+➔ Senha. 
 
-  
+**RF.003 -** O sistema deve permitir o registro da entrada de novos livros: 
 
-  
+*RN.007 -* Para a entrada do livro, deverá ser cadastrado: 
 
-**Idiomas**
+➔ Nome; 
 
-  
+➔ Autor; 
 
-  
+➔ Editora; 
 
-**Informações adicionais**
+➔ Gênero;
 
-  
+➔ Data de publicação.
 
-  
+**RF.004 -** O sistema deve permitir o registro da reserva. 
 
-**Local e data**
+*RN.008 -* Para o registro da reserva do livro, deverá ser cadastrado: 
 
-  
+➔ Nome do usuário; 
 
-  
+➔ Nome do livro; 
 
-**Assinatura**
+➔ Data de retirada; 
 
-Modelo 3 – curriculum vitae
+➔ Data de devolução;
 
-**Nome**
+**RF.005 -** O sistema deve permitir o registro do controle de empréstimos, devoluções e renovações.
 
-Endereço:
+*RN.009 -* O controle será feito com base na disponibilidade das datas.
 
-Tel.:
+**RF.006 -** O sistema deve permitir o registro do controle de multas.
 
-E-mail:
+*RN.010 -* O controle será feito com base nas datas de devolução e retirada dos livros.
 
-Nacionalidade
 
-Estado Civil
+**4. Diagrama de Caso de Uso**
 
-Idade
+![](Aspose.Words.1be3cf06-55fc-4728-9f1a-d0a9999fca6b.004.jpeg)
 
-  
 
-**Objetivo:**
 
-**Formação Acadêmica**
+**4.1 Descrição de Caso de Uso**
 
-  
+**1. Reservar Livro:**
 
-**Idiomas**
+Ator Principal: Usuário
 
-  
+Descrição:
 
-**Síntese de Qualificações**
+- O usuário acessa o sistema de biblioteca online para realizar a reserva de um livro.
+- Ele navega pelo catálogo de livros disponíveis para localizar o livro desejado.
+- Depois de encontrar o livro desejado, o usuário verifica a disponibilidade do exemplar na biblioteca.
+- Caso o livro esteja disponível, o usuário seleciona a opção de reservar o livro.
+- O sistema verifica se o usuário possui uma conta válida na biblioteca e se está autorizado a reservar materiais.
+- Após confirmar a reserva, o sistema registra a solicitação e envia uma notificação de confirmação ao usuário e a data de devolução.
+- Quando o livro reservado estiver disponível para retirada na biblioteca escolhida, o sistema envia uma notificação ao usuário informando que o livro está pronto para ser retirado.
+- O usuário vai até a biblioteca, apresenta sua identificação e retira o livro reservado.
 
-**Experiência Internacional**
+**2. Manter Livro:**
 
-**Experiência Profissional**
+Ator Principal: Bibliotecário
 
-  
+Descrição:
 
-  
+- O bibliotecário acessa o sistema de gestão de biblioteca para realizar a catalogação de novos livros.
+- Ele navega pelo catálogo de livros para verificar se o livro já está cadastrado.
+- Caso o livro não esteja cadastrado, o bibliotecário inicia o processo de catalogação, inserindo informações detalhadas como título, autor(es), editora, ano de publicação, etc.
+- O sistema pode sugerir automaticamente categorias ou classificações baseadas nas informações inseridas, facilitando o processo de organização do acervo.
+- O bibliotecário pode adicionar outras informações relevantes, como palavras-chave, número de exemplares disponíveis e localização física na biblioteca.
+- Depois de completar a catalogação, o bibliotecário revisa as informações para garantir que estão corretas e precisas.
+- Caso necessário, o bibliotecário pode editar ou atualizar as informações do livro no sistema da biblioteca.
+- Uma vez que o livro esteja catalogado corretamente, ele fica disponível para consulta e empréstimo pelos usuários da biblioteca.
 
-**Local e Data**
+**5. Diagrama de Classes**
 
-  
+![](Aspose.Words.1be3cf06-55fc-4728-9f1a-d0a9999fca6b.005.png)
+\*
 
-  
 
-**Assinatura**
+*6. Protótipos de Telas*
 
-  
+*[Insira os protótipos de possíveis telas do sistema, mostrando a disposição dos elementos de interface, os campos de entrada, botões e outras informações relevantes.]*
 
-Modelo 4 – curriculum vitae
+Observação: o professor informou em sala que não era necessário realizar esse tópico.
 
-  
+**7. Cronograma e Entrega**
 
-**CURRICULUM VITAE**
+|**Tarefa**|**Prazo**|
+| - | - |
+|Planejamento|25/03/2024|
+|Organização do documento do Canvas|15/04/2024|
+|Briefing |12/07/2024|
+|Diagrama de Caso de Uso|22/04/2024|
+|Requisitos Funcionais e Não Funcionais|19/04/2024|
+|Diagrama de Classe|29/04/2024|
+|Desenvolvimento do Sistema|20/07/2024|
+|Entrega final|29/07/2024|
 
-**Nome**
+1) Planejamento: 
+   1) Registro das ideias relacionadas ao projeto;
+   1) Definição do tema do projeto;
+   1) Análise e desenvolvimento dos requisitos funcionais e não funcionais.
+1) Organização do documento do Canvas:
+   1) Definição dos tópicos norteadores do propósito do projeto.
+1) Elaboração do Briefing:
+   1) Descrição da organização e aplicação do projeto.
+1) Diagrama de casos de uso:
+   1) Descrição do sistema, do ambiente e suas relações.
+1) Requisitos Funcionais e Não Funcionais:
+   1) Descrição dos serviços e métodos referente ao comportamento do sistema;
+   1) Descrição das restrições dos serviços e métodos que o sistema possui.
+1) Diagrama de classe:
+   1) Organização de um conjunto de métodos, de atributos, de multiplicidades e relacionamentos.
+1) Desenvolvimento do Sistema
+   1) A plataforma definida pelas etapas anteriores é desenvolvida.
+1) Entrega final do projeto: 
+   1) Consolidadas as etapas do projeto o sistema é entregue ao cliente.
 
-Endereço
+**8. Riscos e Mitigação**
 
-Fone Residencial: / Fone Comercial:
+- Possíveis problemas com o desenvolvimento atrasado devido a questões de requisitos:
+- ` `É essencial realizar uma análise minuciosa dos requisitos desde o início do projeto, envolvendo todas as partes interessadas para garantir uma compreensão clara e completa das necessidades. Utilizar uma abordagem ágil que permita ajustes contínuos nos requisitos ao longo do projeto pode ser benéfico.
 
-Estado Civil, idade, nacionalidade.
+- Possibilidade de falhas no desenvolvimento do sistema:
+- É fundamental que a equipe esteja alinhada e organizada com os prazos e demandas do sistema, além disso, empenhada em reduzir os erros. Os desenvolvedores, estarão preparados para lidar com qualquer imprevistos que possam surgir durante os testes.
 
-  
+- Riscos de segurança de dados:
+- É essencial que os dados estejam protegidos por medidas de prevenção com criptografia e de acordo com o LGPD.
 
-**ÁREAS OU CARGOS DE INTERESSE**
+- Risco de atraso na entrega do projeto:
+- A elaboração de um planejamento detalhado e estratégico com foco na produtividade durante o tempo estabelecido reduziram quaisquer possibilidades de atrasos. 
 
-**FORMAÇÃO ACADÊMICA**
+**9. Custos e Orçamento**
 
-**PRINCIPAIS HABILIDADES E QUALIFICAÇÕES**
+1. Custo de desenvolvimento:
+1) Software pequeno porte, entre 10 e 25 telas: R$ 40.000 a R$ 150.000.
 
-**PRINCIPAIS TRABALHOS REALIZADOS**
+`      `2.   Custos operacionais: 
 
-**CURSOS CURRICULARES NÃO OBRIGATÓRIOS PARTICIPAÇÃO EM SEMINÁRIOS, CONGRESSOS E PALESTRAS PRINCIPAIS VÍNCULOS DE TRABALHOS**
+1) Suporte técnico: R$ 1.800 por mês;
+1) Manutenção mensal: R$ 300,00;
+1) Mudança de layout: de R$ 1.000 a R$ 5.000;
+1) Recuperação de invasões: R$ 400,00;
+1) Estratégia de marketing e análise: R$ 1.500 por mês;
+1) Certificado de segurança SSL: R$ 100,00 a R$ 240,00 anuais.
 
-**Empresa:**
+`      `3.   Custo de infraestrutura digital: 
 
-**Local:**
+1) Registro de Domínio: R$ 40,00 anuais;
+1) Hospedagem de site: R$ 100,00 por mês;
 
-**Cargo Atual:** 
+`      `4.   Custo de infraestrutura física:
 
-**Admissão:**
+1) Aluguel: R$ 5.000 por mês;
+1) Internet: R$ 426,00 por mês;
+1) Custos fixos: R$ 10.000 por mês;
 
-**Cargo Inicial:** 
+`      `5.  Custos de consultoria jurídica:
 
-**Ramo de Atividade:**
+1) Valor: R$ 1.000 a R$ 3.000 por mês;
 
-**Principais Produtos:**
+`      `6.   Custo de consultoria de contabilidade:
 
-**INFORMAÇÕES COMPLEMENTARES**
+1) Valor: R$ 350,00 a R$ 700,00 por mês;
 
-**REFERÊNCIAS**
+`      `7.   Custos com funcionários:
 
-  
+1) Valor: R$ 5.000 a R$ 20.000 por mês;
 
-**LOCAL E DATA**
+`      `8.   Valor Total:
 
-  
+1) Valor total: R$ 95.952;
 
-  
 
-**ASSINTURA**
+**10. Considerações Finais**
 
-Modelo 5 – curriculum vitae
+Este documento de visão oferece uma visão abrangente do projeto Sistema de Biblioteca. Ele delineia a finalidade, os principais stakeholders, os requisitos principais, os diagramas de caso de uso, o diagrama de classes e protótipos de possíveis telas para o sistema. Esta base será fundamental para o desenvolvimento do projeto, facilitando a compreensão e o alinhamento das partes interessadas.
 
-  
-
-1.  **IDENTIFICAÇÃO/DADOS PESSOAIS**
-
-  
-
-Nome
-
-Filiação
-
-Data de Nascimento
-
-Estado Civil
-
-Endereço Completo na Capital e/ou Município/Estado/País de Origem
-
-Telefone e/ou Fax
-
-Endereço Completo de pessoa a contatar em casos de emergências
-
-  
-
-**2\. FORMAÇÃO ESCOLAR**
-
-  
-
-2.1 Curso Primário
-
-2.2 Curso Secundário
-
-2.3 Curso(s) Superior(es)
-
-\- Indicar o ano de ingresso na FACULDADE
-
-\- Títulos Universitários
-
-  
-
-**3\. ATIVIDADES EXERCIDAS DURANTE A VIDA ACADÊMICA**
-
-  
-
-**3.1 CURSOS FREQÜENTADOS**
-
-Dispô-los, se possível, agrupando-os segundo a área de opção no Estágio Curricular Supervisionado e declinando:
-
-\- Nome do curso
-
-\- Período de ministração (dias e horas)
-
-\- Local de realização
-
-\- Entidade promotora
-
-\- Coordenação
-
-\- Período de ministração (dias, carga horária)
-
-\- Local de realização
-
-Obs: Não incluir os cursos componentes da programação de congressos, conclaves, etc.dispostos no item 3.4.
-
-  
-
-**3.2.1 ESTÁGIOS REALIZADOS**
-
-  
-
-Dispô-los, em ordem cronológica decrescente, declinando:
-
-\- Local de estágio (hospitais, clínicas, ambulatórios, laboratórios, zoológicos, departamentos), disciplinas, serviços, secretárias de estado, matadouros, frigoríficos, haras, granjas, fazendas, indústrias, fábricas, etc.
-
-\- Entidade concedente
-
-\- Orientador/Supervisor
-
-\- Período e duração (dias e horas de estágio)
-
-\- Avaliação do desempenho (quando houver)
-
-\- Declinar, quando em andamento
-
-**3.3 ESTÁGIOS REALIZADOS**
-
-  
-
-Incluir os estágios realizados de: iniciação científica, de extensão, com o sem bolsa remuneração na forma de bolsa trabalho, etc.
-
-\- Local de trabalho
-
-\- Duração
-
-\- Título do projeto/trabalho
-
-\- Orientação (se possível com manifestação do orientador quanto ao desempenho)
-
-\- Divulgação ou Publicação dos resultados
-
-\- Entidade financiadora
-
-\- Declinar, quando em andamento
-
-  
-
-**3.4 PARTICIPAÇÃO EM CONGRESSOS, ENCONTROS, SEMANAS**
-
-**CIENTÍFICA/ACADÊMICA**
-
-  
-
-3.4.1 Internacionais
-
-3.4.2 Nacionais
-
-3.4.3 Regionais
-
-  
-
-Declinar: nome do evento, entidade promotora, período de realização, local de implantação.
-
-  
-
-**4\. ATIVIDADE PROFISSIONAL**
-
-  
-
-Referir tipo de atividade profissional já exercida ou em exercício, mesmo sem vinculação à Medicina Veterinária.
-
-  
-
-**5\. ATIVIDADE CIENTÍFICA**
-
-  
-
-5.1 Trabalhos publicados em periódicos indexados.
-
-5.2 Comunicações científicas apresentadas em congressos, reuniões científicas, etc.
-
-5.3 Projetos de pesquisa
-
-5.4 Colaboração em teses
-
-  
-
-Declinar: Título do trabalho, autoria, evento de apresentação, local de desenvolvimento, orientação, entidade financiadora.
-
-  
-
-**6\. PARTICIPAÇÃO EM CAMPANHAS DE PROFILAXIA**
-
-  
-
-Declinar: local, entidade promotora, coordenação da campanha, data.
-
-  
-
-  
-
-  
-
-  
-
-**7\. COORDENAÇÃO DE CURSOS, SEMANAS ACADÊMICAS**
-
-  
-
-Declinar: local, entidade promotora, título do evento, coordenação docente, tipo de atividade exercida.
-
-  
-
-**8\. REPRESENTAÇÃO DISCENTE EM COLEGIADOS E EM ASSOCIAÇÕES**
-
-**ACADÊMICAS (CONGREGAÇÃO, COMISSÕES, CONSELHOS DEPARTAMENTAIS, CENTROS ACADÊMICOS)**
-
-  
-
-**9\. ATIVIDADES ASSOCIATIVISTAS**
-
-  
-
-Declinar: sociedades, associações, centros acadêmicos, atlética, núcleos, tipo de filiação (sócio acadêmico, etc.), atividade exercida, (época de ingresso).
-
-  
-
-**10\. CONHECIMENTOS LINGÜÍSTICOS**
-
-  
-
-\- Idioma estrangeiro (fluência, redação, compreensão)
-
-\- Local de aprendizado
-
-\- Certificados
-
-  
-
-**11\. HISTÓRICO ESCOLAR COMPLETO**
-
-  
-
-\- Média ponderada das Disciplinas cursadas entre o 1° e 8° semestres
-
-\- Histórico Escolar
-
-\- Nota do Exame Nacional de Cursos
-
-  
-
-**12\. CERTIFICADOS E COMPROVANTES DE CADA ÍTEM CITADO NO**
-
-**CURRICULUM**
-
-  
-
-  
-
-  
-
-  
-
-  
-
-DATA
-
-  
-
-  
-
-  
-
-  
-
-ASSINATURA
-
-  
-
-  
-
-  
-
-Modelo 6 – curriculum vitae
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-**C U R R I C U L U M V I T A E**
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-ESCREVA SEU NOME AQUI
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-Local, mês e ano
-
-  
-
-**SUMÁRIO**
-
-  
-
-  
-
-  
-
-  
-
-  
-
-1 - DADOS DE IDENTIFICAÇÃO
-
-2 – FORMAÇÃO ACADÊMICA
-
-  
-
-3 - CURSOS REALIZADOS
-
-  
-
-4 – CONGRESSOS, SEMINÁRIOS E EVENTOS
-
-  
-
-5 - ACG
-
-  
-
-6 – OUTROS
-
-  
-
-7- ANEXOS
-
-  
-
-  
-
-  
-
-  
-
-1 - DADOS DE IDENTIFICAÇÃO
-
-  
-
-Nome:
-
-  
-
-Filiação: Nome do seu pai.
-
-Nome da sua mãe.
-
-  
-
-Registro Geral:
-
-  
-
-CPF:
-
-  
-
-Titulo eleitoral: zona: seção:
-
-  
-
-Certificado de dispensa do Serviço Militar:
-
-  
-
-Naturalidade:
-
-  
-
-Endereço:
-
-  
-
-Data de nascimento:
-
-  
-
-Número de matrícula:
-
-  
-
-2 – FORMAÇÃO ACADÊMICA
-
-  
-
-  
-
-3 - CURSOS REALIZADOS:
-
-  
-
-  
-
-4 – CONGRESSOS, SEMINÁRIOS E EVENTOS
-
-  
-
-  
-
-5 – ATIVIDADE COMPLEMENTAR DE GRADUAÇÃO
-
-  
-
-  
-
-6 – OUTROS
-
-  
-
-  
-
-7- ANEXOS
-
-  
-
-  
-
-Local e Data
-
-  
-
-Assinatura
-
-  
-
-Modelo 7 – curriculum vitae
-
-**CURRICULUM VITAE**
-
-**IDENTIFICAÇÃO**
-
-Nome:
-
-Endereço:                                                                      Bairro:                         Fone:                      
-
-Cidade:                                                      CEP:                        Estado:
-
-Filho de                                                                                                    
-
-e de                                                                       
-
-Nacionalidade:                                        Naturalidade:
-
-Data de Nascimento:                              Estado Civil:                               Grau de Instrução:                    
-
-Cédula de Identidade nº:                         Carteira Profissional Nº                     Série:      
-
-Carteira de Reservista nº:                       Título de Eleitor nº:                                Zona:    
-
-Carteira de Habilitação nº:                     Categoria:
-
-CPF:                                                    Inscrito no ....................................... sob nº:   
-
- (órgão profissional)
-
-**Escolaridade**
-
-CURSO 1º Grau (1ª a 8ª série)
-
-Escola:
-
-Cidade:                                                                              Período:
-
-CURSO COLEGIAL OU EQUIVALENTE:
-
-Escola:
-
-Cidade:                                                                              Período:
-
-CURSO SUPERIOR:
-
-Universidade:
-
-Faculdade:                                                                        Curso:
-
-Cidade:                                                                              Período:
-
-CURSOS DE APERFEIÇOAMENTO, PÓS GRADUAÇÃO, SEMINÁRIOS, PALESTRAS, ETC.
-
-Assunto:
-
-Entidade:                                                                              Período:
-
-Assunto:
-
-Entidade:                                                                              Período:
-
-Assunto:
-
-Entidade:                                                                              Período:
-
-  
-
-**EXPERIÊNCIA PROFISSIONAL**
-
-  
-
-Firma:
-
-Endereço:                                                                          Bairro:
-
-Cidade:                                                                              Estado:
-
-Período:                                                                              Cargo:
-
-Funções Desempenhadas:
-
-Firma:
-
-Endereço:                                                                          Bairro:
-
-Cidade:                                                                              Estado:
-
-Período:                                                                              Cargo:
-
-Funções Desempenhadas:
-
-Firma:
-
-Endereço:                                                                          Bairro:
-
-Cidade:                                                                              Estado:
-
-Período:                                                                              Cargo:
-
-Funções Desempenhadas:
-
-**INFORMAÇÕES COMPLEMENTARES - PESSOAS QUE POSSAM DAR INFORMAÇÕES**
-
-  
-
-Nome:                                                                                          Fone:
-
-Endereço:                                                                                    Cidade:
-
-Nome:                                                                                          Fone:
-
-Endereço:                                                                                    Cidade:
-
-**INFORMAÇÕES ECONÔMICAS E FUNCIONAIS**
-
-  
-
-Último Salário:
-
-Salário Pretendido:
-
-Outras Funções que se propõe a exercer:
-
-.............................................. , ........... de ................................................ de .......
-
-.........................................................................................
-
-Modelo 8 – curriculum vitae
-
-  
-
-**CURRICULUM VITAE**
-
-  
-
-NOME COMPLETO
-
-  
-
-**1 – DADOS PESSOAIS**
-
-Cargo:
-
-Endereço:
-
-Telefones (residencial e celular):
-
-Data de nascimento:
-
-Sexo:
-
-Estado Civil:
-
-  
-
-**2 – ESCOLARIDADE**
-
-2º Grau completo
-
-Superior incompleto (Curso, Instituição, semestre)
-
-Superior Completo (Curso, Instituição, ano de conclusão)
-
-  
-
-**3 – EXPERIÊNCIA PROFISSIONAL E/OU DE ESTÁGIO** (digite apenas as três ultimas experiências)
-
-Instituição – período – cargo - principais atividades - motivo da saída
-
-  
-
-**4 – CONHECIMENTOS EM INFORMÁTICA (**Windows, Word, Excel, Access, Internet, outros)
-
-Básico – Intermediário - Avançado
-
-  
-
-**5 – DIGITAÇÃO** (avalie em termos de velocidade)
-
-Básica, Intermediária, Avançada
-
-  
-
-**6 – IDIOMAS**
-
-Leitura, escrita, Conversação
-
-Básico, Intermediário, Avançado
-
-  
-
-**7 – CAPACITAÇÃO** (curso, congresso, fórum, palestra, seminário, workshop, outros).
-
-  
-
-Digite nessa ordem: nome do curso – instituição - carga horária - ano
-
-  
-
-**8 – INTERESSES PESSOAIS** (digite quantos interesses quiser. Informações para fins de banco de dados de _hobbies_).
-
-  
-
-**9 – INFORMAÇÕES ADICIONAIS**
-
-Digite qualquer outra informação que não tenha sido solicitada e que você acha necessária para o seu currículo.
-
-  
-
-**Modelo 9 – curriculum vitae**
-
-  
-
-OBJETIVO (Indique sua pretensão em relação à empresa, ou sua área de interesse).
-
-  
-
-**_1.INFORMAÇÃO PESSOAL_**
-
-  
-
-Nome
-
-Endereço
-
-Telefone
-
-Correio eletrônico
-
-Data e local de nascimento
-
-  
-
-1.  **_EXPERIÊNCIA PROFISSIONAL_**
-
-  
-
-(Comece indicando a experiência profissional mais recente)
-
-• Datas (de – até)
-
-• Nome do empregador
-
-• Tipo de empresa ou setor
-
-• Função ou cargo ocupado
-
-• Principais atividades realizadas
-
-  
-
-**_3\. FORMAÇÃO ACADÊMICA E PROFISSIONAL_**
-
-  
-
-(Comece indicando a experiência profissional mais recente citar principalmente cursos pertinentes a área pretendida)
-
-• Datas (de – até)
-
-• Nome e tipo da organização de ensino ou formação
-
-• Principais disciplinas/competências profissionais adquiridas
-
-  
-
-**_4.CONHECIMENTO EM LÍNGUAS e CONHECIMENTO EM INFORMÁTICA_**
-
-  
-
-(Indique o nível de conhecimento em línguas básico, intermediário ou avançado e indique o conhecimentos em informática mais aplicáveis a sua área de conhecimento)
-
-  
-**_5.APTIDÕES E COMPETÊNCIAS_**
-
-   
-
-_Local e Data_
-
-  
-_Assinatura_
